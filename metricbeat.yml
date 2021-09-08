@@ -1,0 +1,17 @@
+---
+#
+# Installing Metricbeat
+#
+
+# Install Metricbeat 
+
+- name: Install Metricbeat with apt
+  yum:
+   name: metricbeat
+    
+# Starting Metricbeat
+
+- name: Starting Metricbeat
+  service:
+   name: metricbeat
+   state: started
